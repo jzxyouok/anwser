@@ -1,0 +1,159 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: 0;
+}
+.clear{
+	clear:both;
+	}
+html,body{
+	font-family:"微软雅黑";
+	background:url(../images/dati.jpg) no-repeat center center;
+	background-size:100% 100%;
+	}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	}
+header{
+	width:100%;
+	text-align:center;
+	padding-top:30px;
+	}
+#pic_top{
+	width:80%;
+	padding-bottom:20px;
+	}
+#pic_bottom{
+	padding-top:20px;
+	width:40%;
+	} 
+header p{
+	color:#e6dd16;
+	font-size:20px;
+	line-height:40px;
+	font-family:"全新硬笔楷书简";
+	}
+section{
+	width:94%;
+	padding:3%;
+	color:#fff;
+	font-size:15px;
+	line-height:24px;
+	}
+#question{
+	padding:10px 0;
+	}
+footer{
+	width:100%;
+	text-align:center;
+	}
+footer img{
+	padding:20px 0;
+	width:40%;
+	}
+#last{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	text-align:center;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	}
+#paizi{
+	padding-top:50px;
+	padding-bottom:20px;
+	width:100%;
+	margin:0 auto;
+	background:url(../images/bg_tip.png) no-repeat top center;
+	background-size:70% 100%;
+	margin-bottom:20px;
+	animation: one 1.5s linear alternate;
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;	
+	-webkit-animation: one 1.5s linear alternate;
+	}
+@keyframes one {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes one {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+#paizi p{
+	font-size:20px;
+	line-height:60px;
+	color:#000;
+	}
+#txt{
+	padding:20px 0;
+	background:#f2f2f2;
+	width:60%;
+	margin:0 auto;
+	border-radius:5px;
+	}
+.gongxi{
+	width:55%;
+	}
+.duihuan{
+	width:60%;
+	}
+.close{
+	display:none;
+	}
+.btn{
+position: absolute;
+left: 0;
+top: 0;
+width:80px;
+height: 67px;
+background:url(../images/btn_jxsz.png) 0 0 no-repeat;
+-webkit-background-size: 80px 67px;
+background-size: 80px 67px;
+z-index: 999;
+/* CSS Document */
+

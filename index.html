@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="white" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>答题页面</title>
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(e) {
+        $('footer').click(function(e) {
+            $('#last').show();
+			$('#paizi').css('animation-play-state','running');
+			$('.close').fadeIn('slow');
+        });
+		$('.close').click(function(e) {
+            $('#last').hide();
+			$('#paizi').css('animation-play-state','paused');
+        });
+    });
+</script> 
+</head>
+
+<body>
+<header><img src="images/banner_bg_03.png" id="pic_top"><p>回答下面5道题目</p><p>全部答对即可领取流量大礼包</p></header>
+<section>
+	<form>
+	<div id="question">
+	<p>1、加强社会保障和增加居民收入。企业退休人员基本养老金标准提高（）。城乡居民基础养老金标准统一由55元提高到70元。</p>
+    <label><input type="radio" name="choose1">A.10%</br><input type="radio" name="choose1">B.15%</br><input type="radio" name="choose1">C.20%</br><input type="radio" name="choose1">D.30%</label>
+    </div>
+	<div id="question">
+	<p>2、电影《一步之遥》中的马走日的扮演者叫什么？</p>
+    <label><input type="radio" name="choose1">A.姜文</br><input type="radio" name="choose1">B.葛优</br><input type="radio" name="choose1">C.文章</br><input type="radio" name="choose1">D.姜武</label>
+    </div>
+	<div id="question">
+	<p>3、“举头望明月”下句是什么？</p>
+    <label><input type="radio" name="choose1">A.低头撕裤裆</br><input type="radio" name="choose1">B.低头思故乡</br><input type="radio" name="choose1">C.低头跳进江</br><input type="radio" name="choose1">D.低头上柱香</label>
+    </div>
+	<div id="question">
+	<p>4、东三省都有哪三省</p>
+    <label><input type="radio" name="choose1">A.黑、吉、内</br><input type="radio" name="choose1">B.吉、内、辽</br><input type="radio" name="choose1">C.黑、内、辽</br><input type="radio" name="choose1">D.黑、吉、辽</label>
+    </div>
+	<div id="question">
+	<p>5、2014年NBA季后赛总冠军是哪只队伍？</p>
+    <label><input type="radio" name="choose1">A.休斯顿火箭</br><input type="radio" name="choose1">B.洛杉矶湖人</br><input type="radio" name="choose1">C.圣安东尼奥马刺</br><input type="radio" name="choose1">D.迈阿密热火</label>
+    </div>
+    </form>
+</section>
+<footer><img src="images/tijiao_03.png"></footer>
+<div id="last"><div id="paizi"><div id="txt"><img src="images/pic_gongxi.png" class="gongxi"><p>获得<span>50</span>积分</p><img src="images/btn_duihuan.png" class="duihuan"></div></div><img src="images/btn_close2.png" width="50" height="50" class="close"></div>
+<div class="btn"></div>
+</body>
+</html>
